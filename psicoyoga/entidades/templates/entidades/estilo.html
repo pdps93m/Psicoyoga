@@ -1,0 +1,37 @@
+{% extends "entidades/index.html" %}
+
+
+{% block titulo %}
+<h1 class="site-heading text-center text-faded d-none d-lg-block">
+<span class="site-heading-upper text-primary mb-3">Estilos</span>
+</h1>
+{% endblock titulo %}
+
+
+
+{% block contenido %}
+    <h2>Aqui se brindara información sobre los distintos estilos que se practican</h2>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre estilo</th>
+                <th>Horarios</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for c in estilos %}
+            <tr>
+                <td>{{ c.id }}</td>
+                <td>{{ c.nombre }}</td>
+                <td>{{ c.horarios }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {% endblock contenido %}
+    
+
+

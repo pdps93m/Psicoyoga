@@ -10,6 +10,25 @@
 
 
 {% block contenido %}
-    <h2>Aquí podras ver la información de tu perfil de alumno</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for a in Alumno %}
+        <tr>
+            <td>{{ a.id }}</td>
+            <td>{{ a.Nombre }}</td>
+            <td>{{ a.Apellido }}</td>
+            <td>{{ a.Email }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
 {% endblock contenido %}
     

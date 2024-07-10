@@ -10,6 +10,8 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ 
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -102,6 +104,11 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-image: ("C:/User/Usuario/Desktop/coderhouse/Python_2do_intento/Psicoyo_proyecto/psicoyoga/entidades/static/assets/img")
+}
+
+body {
+  background-image:image-set("C:/User/Usuario/Desktop/coderhouse/Python_2do_intento/Psicoyo_proyecto/psicoyoga/entidades/static/assets/img")
 }
 
 hr {
@@ -2152,7 +2159,7 @@ textarea.form-control-lg {
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-image: url(C:/Users/Usuario/Desktop/coderhouse/Python_2do_intento/Psicoyo_proyecto/psicoyoga/entidades/static/assets/img/fondo_psicoyo.jpg/);
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 16px 12px;
@@ -10826,7 +10833,7 @@ textarea.form-control-lg {
   }
 }
 body {
-  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../assets/img/bg.jpg");
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), href("psicoyoga/entidades/static/assets/img/fondo_psicoyo.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;

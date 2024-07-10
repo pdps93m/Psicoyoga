@@ -2,9 +2,7 @@
 
 
 {% block titulo %}
-<h1 class="site-heading text-center text-faded d-none d-lg-block">
-<span class="site-heading-upper text-primary mb-3">Estilos</span>
-</h1>
+<h1 class="site-heading text-center text-faded d-none d-lg-block">Estilos</h1>
 {% endblock titulo %}
 
 
@@ -16,22 +14,23 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Nombre estilo</th>
+                <th>Nombre</th>
+                <th>Estilo</th>
                 <th>Horarios</th>
             </tr>
         </thead>
         <tbody>
-        {% for c in estilos %}
+        {% for e in Estilos %}
             <tr>
-                <td>{{ c.id }}</td>
-                <td>{{ c.nombre }}</td>
-                <td>{{ c.horarios }}</td>
+                <td>{{ e.id }}</td>
+                <td>{{ e.Nombre }}</td>
+                <td>{{ e.Estilo }}</td>
+                <td>{{ a.Horarios }}</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
-
-    {% endblock contenido %}
+{% endblock contenido %}
     
 
 

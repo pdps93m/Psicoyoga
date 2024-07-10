@@ -11,5 +11,28 @@
 
 {% block contenido %}
     <h2>Aquí se brindara información sobre el acompañamiento terapéutico</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Asist Semanales</th>
+                <th>Horario</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for a in alumno %}
+            <tr>
+                <td>{{ a.id }}</td>
+                <td>{{ a.Nombre }}</td>
+                <td>{{ a.AsistSemanales }}</td>
+                <td>{{ a.Horario }}</td>
+                <td>{{ a.Email }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 {% endblock contenido %}
+
     
